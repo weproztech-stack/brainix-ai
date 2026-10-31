@@ -1,34 +1,47 @@
 {
   "expo": {
-    "name": "Brainory AI",
-    "slug": "brainory-ai",
+    "name": "Brainix AI",
+    "slug": "brainix-ai",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
+    "newArchEnabled": false,
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#F8FAFC"
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
     "ios": {
       "supportsTablet": true
     },
     "android": {
-      "package": "com.mdattu.brainoryai",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "backgroundColor": "#F8FAFC"
+      },
+      "package": "com.brainix.brain"
     },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 36,
+            "targetSdkVersion": 36,
+            "minSdkVersion": 24,
+            "multidex": true
+          }
+        }
+      ],
+      "expo-asset",
+      "expo-font"
+    ],
+    "owner": "mdattu",
     "extra": {
       "eas": {
-        "projectId": "cd6695dd-383e-41e8-8984-075bfdbf3d2b"
+        "projectId": "6c7b7e99-d041-4ce0-ae00-72a3a1e524ff"
       }
-    },
-    "owner": "mdattu"
+    }
   }
 }
